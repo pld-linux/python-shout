@@ -7,7 +7,7 @@ License:	LGPL v2+
 Group:		Libraries/Python
 Source0:	http://downloads.xiph.org/releases/libshout/shout-python-%{version}.tar.gz
 # Source0-md5:	80bec97a1462c2d2a9282ba8a7c18336
-URL:		http://mhash.sourceforge.net/
+URL:		http://icecast.org/
 BuildRequires:	libshout-devel >= 2.1
 BuildRequires:	pkgconfig
 BuildRequires:	python-devel
