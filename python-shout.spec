@@ -1,5 +1,5 @@
 Summary:	Python interface for libshout 2 library
-Summary(pl):	Interfejs Pythona do biblioteki libshout 2
+Summary(pl.UTF-8):   Interfejs Pythona do biblioteki libshout 2
 Name:		python-shout
 Version:	0.2
 Release:	1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module is a Python binding for libshout 2 library. It allows you
 to act as a source for icecast 1 and 2, and shoutcast.
 
-%description -l pl
-Ten modu≥ jest interfejsem Pythona do biblioteki libshout 2. Pozwala
-na dzia≥anie jako ºrÛd≥o dla icecasta 1 i 2 oraz shoutcasta.
+%description -l pl.UTF-8
+Ten modu≈Ç jest interfejsem Pythona do biblioteki libshout 2. Pozwala
+na dzia≈Çanie jako ≈∫r√≥d≈Ço dla icecasta 1 i 2 oraz shoutcasta.
 
 %prep
 %setup -q -n shout-python-%{version}
