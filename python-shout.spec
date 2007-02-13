@@ -1,5 +1,5 @@
 Summary:	Python interface for libshout 2 library
-Summary(pl.UTF-8):   Interfejs Pythona do biblioteki libshout 2
+Summary(pl.UTF-8):	Interfejs Pythona do biblioteki libshout 2
 Name:		python-shout
 Version:	0.2
 Release:	1
