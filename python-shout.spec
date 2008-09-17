@@ -1,16 +1,16 @@
 Summary:	Python interface for libshout 2 library
 Summary(pl.UTF-8):	Interfejs Pythona do biblioteki libshout 2
 Name:		python-shout
-Version:	0.2
+Version:	0.2.1
 Release:	1
 License:	LGPL v2+
 Group:		Libraries/Python
 Source0:	http://downloads.xiph.org/releases/libshout/shout-python-%{version}.tar.gz
-# Source0-md5:	80bec97a1462c2d2a9282ba8a7c18336
+# Source0-md5:	864cfecc2474590470fcce750416b7d3
 URL:		http://icecast.org/
 BuildRequires:	libshout-devel >= 2.1
 BuildRequires:	pkgconfig
-BuildRequires:	python-devel
+BuildRequires:	python-devel >= 1:2.5
 Requires:	libshout >= 2.1
 %pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,12 +28,12 @@ na działanie jako źródło dla icecasta 1 i 2 oraz shoutcasta.
 
 %build
 export CFLAGS="%{rpmcflags}"
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
+%{__python} setup.py install \
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT
 
@@ -46,5 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{py_sitedir}/*.so
+%attr(755,root,root) %{py_sitedir}/shout.so
+%{py_sitedir}/shout_python-*.egg-info
 %{_examplesdir}/%{name}-%{version}
