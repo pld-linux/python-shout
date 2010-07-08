@@ -2,7 +2,7 @@ Summary:	Python interface for libshout 2 library
 Summary(pl.UTF-8):	Interfejs Pythona do biblioteki libshout 2
 Name:		python-shout
 Version:	0.2.1
-Release:	2
+Release:	3
 License:	LGPL v2+
 Group:		Libraries/Python
 Source0:	http://downloads.xiph.org/releases/libshout/shout-python-%{version}.tar.gz
