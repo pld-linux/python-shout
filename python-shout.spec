@@ -11,6 +11,8 @@ URL:		http://icecast.org/
 BuildRequires:	libshout-devel >= 2.1
 BuildRequires:	pkgconfig
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 Requires:	libshout >= 2.1
 %pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
