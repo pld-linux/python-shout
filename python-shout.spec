@@ -8,6 +8,7 @@ Group:		Libraries/Python
 Source0:	http://downloads.xiph.org/releases/libshout/shout-python-%{version}.tar.gz
 # Source0-md5:	864cfecc2474590470fcce750416b7d3
 URL:		http://icecast.org/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	libshout-devel >= 2.1
 BuildRequires:	pkgconfig
 BuildRequires:	python-devel >= 1:2.5
